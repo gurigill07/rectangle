@@ -65,6 +65,24 @@ namespace PROG8170_Assignment1_Test
             //Assert 
             Assert.AreEqual(expectedResult, actualResult);
         }
+        [Test]
+        public void Setwidth_Input35_Returns35()
+        {
+
+            //Arrange
+            int length = 35;
+            int width = 18;
+
+            int expectedResult = width;
+
+            Rectangle testRectangle = new Rectangle(length, width);
+
+            //Act 
+            double actualResult = testRectangle.SetWidth(width);
+
+            //Assert 
+            Assert.AreEqual(expectedResult, actualResult);
+        }
 
 
 
