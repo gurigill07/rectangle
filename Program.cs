@@ -83,6 +83,25 @@ namespace PROG8170_Assignment1_Test
             //Assert 
             Assert.AreEqual(expectedResult, actualResult);
         }
+        [Test]
+        public void GetPerimeter_Input_Length27And_Width27_Returns60()
+        {
+
+            //Arrange
+            int length = 27;
+            int width = 11;
+
+            int expectedResult = 2 * (length + width);
+
+            Rectangle testRectangle = new Rectangle(length, width);
+
+            //Act 
+            double actualResult = testRectangle.GetPerimeter();
+
+            //Assert 
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
 
 
 
