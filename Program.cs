@@ -17,7 +17,7 @@ namespace PROG8170_Assignment1_Test
 
             //Arrange
             int length = 25;
-            int width = 5;
+            int width = 13;
 
             int expectedResult = length;
 
@@ -29,7 +29,26 @@ namespace PROG8170_Assignment1_Test
             //Assert 
             Assert.AreEqual(expectedResult, actualResult);
         }
-        
+        [Test]
+        public void GetWidth_Input33_Returns33()
+        {
+
+            //Arrange
+            int length = 13;
+            int width = 40;
+
+            int expectedResult = width;
+
+            Rectangle testRectangle = new Rectangle(length, width);
+
+            //Act 
+            double actualResult = testRectangle.GetWidth();
+
+            //Assert 
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+
 
         static void Main(string[] args)
         {
