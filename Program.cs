@@ -101,6 +101,25 @@ namespace PROG8170_Assignment1_Test
             //Assert 
             Assert.AreEqual(expectedResult, actualResult);
         }
+        [Test]
+        public void GetArea_Input_Length7And_Width7_Returns49()
+        {
+
+            //Arrange
+            int length = 7;
+            int width = 7;
+
+            int expectedResult = (length * width);
+
+            Rectangle testRectangle = new Rectangle(length, width);
+
+            //Act 
+            double actualResult = testRectangle.GetArea();
+
+            //Assert 
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
 
 
 
