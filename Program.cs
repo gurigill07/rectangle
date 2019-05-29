@@ -47,6 +47,25 @@ namespace PROG8170_Assignment1_Test
             //Assert 
             Assert.AreEqual(expectedResult, actualResult);
         }
+        [Test]
+        public void SetLength_Input125_Returns125()
+        {
+
+            //Arrange
+            int length = 125;
+            int width = 18;
+
+            int expectedResult = length;
+
+            Rectangle testRectangle = new Rectangle(length, width);
+
+            //Act 
+            double actualResult = testRectangle.SetLength(length);
+
+            //Assert 
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
 
 
 
